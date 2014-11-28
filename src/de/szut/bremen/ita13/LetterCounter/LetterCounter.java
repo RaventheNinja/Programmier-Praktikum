@@ -12,15 +12,25 @@ import java.util.TreeMap;
  */
 public class LetterCounter {
 	private String filename;
+	private int countedLetters;
+	private  SortedMap<Character, Integer> lettersCountedMap = new TreeMap<Character, Integer>();
 	
-	LetterCounter(){
+	
+	public LetterCounter(){
 		
 	}
 	
-	LetterCounter(String filename){
-		
+	public LetterCounter(String filename){
+		this.filename = filename;
 	}
-
+	
+	/**
+	 * @return the countedLetters
+	 */
+	public int getCountedLetters() {
+		return countedLetters;
+	}
+	
 	/**
 	 * @return the filename
 	 */
@@ -40,8 +50,11 @@ public class LetterCounter {
 	}
 	
 	public SortedMap<Character, Integer> getStats() {
-		SortedMap<Character, Integer> countsOfChars = new TreeMap<Character, Integer>();
-		return countsOfChars;
+		return lettersCountedMap;
+	}
+	
+	private void initResultVectorAndMap (){
+		
 	}
 	
 	public void showStats(){
