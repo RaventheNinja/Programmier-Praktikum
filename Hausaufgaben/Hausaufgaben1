@@ -1,0 +1,12 @@
+Letter Counter - Klasse
+Letter Counter()
+LetterCounter (String filename)
+setFilename
+getFilename
+parseFile():void
+getStats():SortedMap<Character, Integer>
+showStats():void // schauen ob es funktioniert
+
+GUI // wenn man will
+Menübar vllt
+Letters | Counts
